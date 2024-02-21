@@ -14,3 +14,10 @@ function openTab(event, cityName) {
     event.currentTarget.className += " active";
 }
 
+
+const mobile_menu = document.getElementById('menu-icon');
+const mobile_nav_bar = document.querySelector('.mobile-nav-bar');
+
+mobile_menu.addEventListener('click', () => {
+    mobile_nav_bar.classList.toggle('active');
+});
